@@ -1,6 +1,7 @@
 var React = require('react');
 var Results = require('../components/results');
 var PropTypes = React.PropTypes;
+var githubHelpers = require('../utils/githubhelpers')
 
 var ResultsContainer = React.createClass({
     getInitialState: function() {
@@ -17,7 +18,7 @@ var ResultsContainer = React.createClass({
                 scores: scores,
                 isLoading: false
             })
-        }).bind(this)
+        }.bind(this))
     },
     render: function() {
         return (
